@@ -1,3 +1,4 @@
+import 'package:bookly_app2/features/home/presentation/views/widgets/custom_app_bar.dart';
 import 'package:flutter/material.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -5,17 +6,11 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [CustomAppBar()],
+    return const Padding(
+      padding: EdgeInsets.symmetric(horizontal: 30),
+      child: Column(
+        children: [CustomAppBar()],
+      ),
     );
-  }
-}
-
-class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
   }
 }

@@ -13,7 +13,10 @@ class ListViewBestSeller extends StatelessWidget {
           scrollDirection: Axis.vertical,
           itemCount: 6,
           itemBuilder: (context, index) {
-            return const ListViewBestSellerItem();
+            return const Padding(
+              padding: EdgeInsets.only(top: 15, bottom: 15),
+              child: ListViewBestSellerItem(),
+            );
           }),
     );
   }

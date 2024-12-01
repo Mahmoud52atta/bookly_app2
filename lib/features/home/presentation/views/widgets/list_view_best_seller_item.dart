@@ -1,5 +1,6 @@
 import 'package:bookly_app2/core/util/app_router.dart';
 import 'package:bookly_app2/core/util/assets.dart';
+import 'package:bookly_app2/features/home/presentation/views/widgets/book_ratio.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_icon_class/font_awesome_icon_class.dart';
 import 'package:go_router/go_router.dart';
@@ -43,26 +44,7 @@ class ListViewBestSellerItem extends StatelessWidget {
                   height: 10,
                 ),
                 Row(
-                  children: [
-                    Text('19.99 €'),
-                    Spacer(),
-                    Icon(
-                      FontAwesomeIcons.solidStar,
-                      color: Color(0xffFFDD4F),
-                    ),
-                    SizedBox(
-                      width: 6.3,
-                    ),
-                    Text(
-                      '48.6',
-                    ),
-                    SizedBox(
-                      width: 5,
-                    ),
-                    Text(
-                      '(243.5)',
-                    )
-                  ],
+                  children: [Text('19.99 €'), Spacer(), BookRatio()],
                 )
               ],
             ),
